@@ -1,0 +1,81 @@
+/* 共通 */
+*{
+    color: white;
+    font-family: "Times New Roman";
+
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* body */
+body{
+    background-color: black;
+
+}
+
+/* Particle */
+/* @import url('https://fonts.googleapis.com/css?family=Merienda'); */
+
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  /* Default Styling */
+  .container {
+    height: 100vh;
+    flex-direction: column;
+  }
+  .form{
+      margin: 2rem;
+      flex-direction: column;
+  }
+  input{
+      width: 12rem;
+      height: 1.5rem;
+      margin: 0;
+      text-align: center;
+      font-size: 1.2rem;
+      color: black;
+  }
+  button{
+      width: 10rem;
+      height: 2rem;
+      color: white;
+      background-color: black;
+      margin: 1rem;
+  }
+/* タイプライター */
+#app {
+    width: 480px;
+    margin: 40px auto;
+    padding: 28px;
+    line-height: 1.5;
+    font-size: 5rem;
+    /* border: 1px solid #ffffff; */
+    /* border-radius: 5px; */
+    /* background-color: transparent; */
+    /* box-shadow: 2px 2px 5px 0px rgba(200, 200, 200, 1); */
+  }
+  
+  #typewriter::after {
+    content: "|";
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes blink {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+  
